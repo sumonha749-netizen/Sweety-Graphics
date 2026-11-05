@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sweety Graphics sill and rubber</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #183b2b;
+      background: #f7fcf8;
+    }
+
+    header {
+      background: white;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 2px 12px #173c2010;
+    }
+
+    .logo { font-size: 20px; font-weight: bold; }
+    .logo span { color: #329b60; }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border: 0;
+      border-radius: 10px;
+      background: #237d4a;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hero {
+      padding: 70px 6%;
+      background: linear-gradient(120deg, #e0f8e6, #f5fff7);
+    }
+
+    .hero h1 {
+      max-width: 650px;
+      font-size: clamp(32px, 6vw, 52px);
+      margin: 0 0 16px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+    main { padding: 45px 6%; }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e0eee3;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .image-placeholder {
+      height: 180px;
+      background: #e5f5e9;
+      display: grid;
+      place-items: center;
+      color: #648b6d;
+    }
+
+    .card-content { padding: 18px; }
+    .card h3 { margin: 0 0 10px; }
+    .price { color: #237d4a; font-weight: bold; }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #e7f6ea;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo"><span>Sweety</span> Graphics</div>
+    <a class="button" href="#products">পণ্য দেখুন</a>
+  </header>
+
+  <section class="hero">
+    <h1>আপনার প্রয়োজনের পণ্য, এখন অনলাইনে</h1>
+    <p>
+      Sweety Graphics sill and rubber-এ স্বাগতম।
+      ঘরে বসেই পছন্দের পণ্য দেখুন এবং সারা বাংলাদেশে অর্ডার করুন।
+    </p>
+    <a class="button" href="#products">কেনাকাটা শুরু করুন</a>
+  </section>
+
+  <main id="products">
+    <h2>আমাদের পণ্য</h2>
+    <p>নিচের পণ্যগুলো শুধু ডিজাইন দেখানোর জন্য নমুনা।</p>
+
+    <div class="products">
+      <article class="card">
+        <div class="image-placeholder">পণ্যের ছবি</div>
+        <div class="card-content">
+          <h3>নমুনা পণ্য ১</h3>
+          <p class="price">৳ ৫০০</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="image-placeholder">পণ্যের ছবি</div>
+        <div class="card-content">
+          <h3>নমুনা পণ্য ২</h3>
+          <p class="price">৳ ৭৫০</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>© Sweety Graphics sill and rubber</footer>
+</body>
+</html>

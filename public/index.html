@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sweety Graphics sill and rubber</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <strong>Sweety Graphics</strong>
+    <a href="#cart">কার্ট (<span id="count">0</span>)</a>
+  </header>
+
+  <section class="hero">
+    <h1>Sweety Graphics sill and rubber</h1>
+    <p>পছন্দের পণ্য অর্ডার করুন — সারা বাংলাদেশে ডেলিভারি।</p>
+    <a class="button" href="#products">পণ্য দেখুন</a>
+  </section>
+
+  <main>
+    <section id="products">
+      <h2>আমাদের পণ্য</h2>
+      <p id="loading">পণ্য লোড হচ্ছে...</p>
+      <div id="productList" class="grid"></div>
+    </section>
+
+    <section id="cart">
+      <h2>আপনার কার্ট</h2>
+      <div class="box">
+        <div id="cartItems"></div>
+        <p id="totals"></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>অর্ডারের তথ্য</h2>
+
+      <form id="orderForm" class="box">
+        <label for="name">নাম</label>
+        <input id="name" minlength="2" maxlength="100" required>
+
+        <label for="phone">বাংলাদেশি মোবাইল নম্বর</label>
+        <input id="phone" type="tel" maxlength="20"
+               placeholder="01XXXXXXXXX" required>
+
+        <label for="address">সম্পূর্ণ ঠিকানা</label>
+        <textarea id="address" minlength="10" maxlength="300"
+                  rows="3" required></textarea>
+
+        <label for="payment">পেমেন্ট পদ্ধতি</label>
+        <select id="payment">
+          <option value="cod">ক্যাশ অন ডেলিভারি</option>
+          <option value="whatsapp">WhatsApp-এ আলোচনা করব</option>
+        </select>
+
+        <p class="notice">
+          অর্ডার দিলে আপনার নাম, নম্বর ও ঠিকানা দোকানের সার্ভারে
+          সংরক্ষিত হবে। WhatsApp মেসেজ পাঠাতে চাইলে অর্ডারের পর
+          আলাদা বাটনে চাপতে হবে।
+        </p>
+
+        <button type="submit" id="orderButton">অর্ডার করুন</button>
+        <p id="message" role="status"></p>
+
+        <a id="whatsappLink" class="button hidden"
+           target="_blank" rel="noopener noreferrer">
+          WhatsApp-এ দোকানকে জানান
+        </a>
+      </form>
+    </section>
+  </main>
+
+  <footer>© Sweety Graphics sill and rubber</footer>
+</body>
+</html>
